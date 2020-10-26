@@ -1,19 +1,21 @@
 # Video Conversion Workflow for MediaConvert
-In this project Amazon S3 services and Lambda are used to monitor S3 watchfolder bucket and automatically trigger AWS MediaConvert jobs. An ingest workflow will be triggered to convert the video each time media file is uploaded to AWS S3 bucket. The lambda will send the video to the MediaConvert service to produce MP4 output with an specific graphic overlay on it.
+In this project Amazon S3 services and Lambda are used to monitor S3 watchfolder bucket and automatically trigger AWS MediaConvert jobs.
+
+Each time media file is uploaded to specific AWS S3 bucket, an ingest workflow will be triggered to convert the video. The lambda will send the video to the MediaConvert service to produce MP4 output with an specific graphic overlay on it.
 
 ## Project description
 
-mediafiles/ - a number of various media files used for testing
+_mediafiles/_ - a number of various media files used for testing
 
-lambda_function.py - Lambda fiunction written by using Boto3 AWS SDK for Python
+_lambda_function.py_ - Lambda fiunction written by using Boto3 AWS SDK for Python
 
-mediaconvert-job.json - JSON file with transcoding job parameters
+_mediaconvert-job.json_ - JSON file with transcoding job parameters
 
-myVODLambda-5cacec2a-4a5a-4e6c-916e-5951ca0e139e.zip - Lambda deployment package containing lambda function and json file
+_myVODLambda-5cacec2a-4a5a-4e6c-916e-5951ca0e139e.zip_ - Lambda deployment package containing lambda function and json file
 
-myVODLambda.yml - YAML file for MediaConvert
+_myVODLambda.yml_ - YAML file for MediaConvert
 
-upload.py - script used for testing the workflow
+_upload.py_ - script used for testing the workflow
 
 ## Testing instructions
 
