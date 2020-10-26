@@ -2,6 +2,8 @@ import json
 import boto3
 import uuid
 import os
+import logging
+from botocore.exceptions import ClientError
 
 def lambda_handler(event, context):
 
