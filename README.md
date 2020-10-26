@@ -19,8 +19,9 @@ _upload.py_ - script used for testing the workflow
 
 ## Testing instructions
 
+Putting objects into this S3 bucket permission has been granted to any AWS account. If needed, I can create IAM user for this task and provide credentials.
+
 1. Run upload.py script in the terminal. You should have boto3 in your environment.
 2. Go to http://koreva-liubov-input-bucket.s3-website-us-west-2.amazonaws.com/ to see the list of input media files
 3. Once the job finished, the resulting output will be visible at: http://koreva-liubov-output-bucket.s3-website-us-west-2.amazonaws.com/
 4. You can upload another sample files by modifying upload.py
-
